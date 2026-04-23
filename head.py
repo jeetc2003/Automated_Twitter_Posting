@@ -9,7 +9,7 @@ def connect_to_gsheets():
         "https://www.googleapis.com/auth/drive",
     ]
 
-    # Load creds.json file (use the one you pasted earlier)
+    # Load creds.json file
     creds = Credentials.from_service_account_file("creds.json", scopes=scope)
     client = gspread.authorize(creds)
 
